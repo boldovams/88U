@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class TickersItem{
 
     @JsonProperty("alerts")
-    private List<AlertsItem> alerts;
+    public List<AlertsItem> alerts;
 
     @JsonProperty("ticker")
-    private String ticker;
+    public String ticker;
 
     public void setAlerts(List<AlertsItem> alerts){
         this.alerts = alerts;

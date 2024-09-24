@@ -5,13 +5,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class Add {
     @JsonProperty("name")
-    private String name;
+    public String name;
 
     @JsonProperty("timeFrame")
-    private int timeFrame;
+    public int timeFrame;
 
     @JsonProperty("percent")
-    private int percent;
+    public int percent;
 
     public Add() {
     }

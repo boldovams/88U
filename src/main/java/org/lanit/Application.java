@@ -1,5 +1,6 @@
 package org.lanit;
 import org.springframework.boot.SpringApplication;
+//import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication

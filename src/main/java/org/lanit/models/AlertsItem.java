@@ -5,10 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class AlertsItem{
 
     @JsonProperty("timeframe")
-    private int timeframe;
+    int timeframe;
 
     @JsonProperty("percent")
-    private int percent;
+    int percent;
 
     public void setTimeframe(int timeframe){
         this.timeframe = timeframe;

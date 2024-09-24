@@ -5,19 +5,19 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class PostResponse{
 
     @JsonProperty("add")
-    private Add add;
+    public Add add;
 
     @JsonProperty("lastUpdate")
-    private String lastUpdate;
+    public String lastUpdate;
 
     @JsonProperty("delete")
-    private Delete delete;
+    public Delete delete;
 
     @JsonProperty("uuid")
-    private String uuid;
+    public String uuid;
 
     @JsonProperty("info")
-    private Info info;
+    public Info info;
 
     public void setAdd(Add add){
         this.add = add;

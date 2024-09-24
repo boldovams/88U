@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Info{
 
     @JsonProperty("userID")
-    private String userID;
+    public String userID;
 
     @JsonProperty("tickers")
-    private List<TickersItem> tickers;
+    public List<TickersItem> tickers;
 
     public void setUserID(String userID){
         this.userID = userID;

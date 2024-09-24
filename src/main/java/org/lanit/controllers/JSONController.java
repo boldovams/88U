@@ -1,4 +1,4 @@
-package org.lanit;
+package org.lanit.controllers;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.node.ArrayNode;

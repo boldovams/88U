@@ -4,10 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class Delete{
 
     @JsonProperty("tickerName")
-    private String tickerName;
+    public String tickerName;
 
     @JsonProperty("alertIndex")
-    private int alertIndex;
+    public int alertIndex;
 
     public void setTickerName(String tickerName){
         this.tickerName = tickerName;
