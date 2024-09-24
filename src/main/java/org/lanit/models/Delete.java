@@ -1,27 +1,35 @@
 package org.lanit.models;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Delete{
+public class Delete {
 
     @JsonProperty("tickerName")
-    public String tickerName;
+    private String tickerName;
 
     @JsonProperty("alertIndex")
-    public int alertIndex;
+    private int alertIndex;
 
-    public void setTickerName(String tickerName){
+    public Delete() {
+    }
+
+    public Delete(String tickerName, int alertIndex) {
         this.tickerName = tickerName;
-    }
-
-    public String getTickerName(){
-        return tickerName;
-    }
-
-    public void setAlertIndex(int alertIndex){
         this.alertIndex = alertIndex;
     }
 
-    public int getAlertIndex(){
+    public void setTickerName(String tickerName) {
+        this.tickerName = tickerName;
+    }
+
+    public String getTickerName() {
+        return tickerName;
+    }
+
+    public void setAlertIndex(int alertIndex) {
+        this.alertIndex = alertIndex;
+    }
+
+    public int getAlertIndex() {
         return alertIndex;
     }
 }

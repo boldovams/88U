@@ -3,27 +3,35 @@ package org.lanit.models;
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Info{
+public class Info {
 
     @JsonProperty("userID")
-    public String userID;
+    private String userID;
 
     @JsonProperty("tickers")
-    public List<TickersItem> tickers;
+    private List<TickersItem> tickers;
 
-    public void setUserID(String userID){
+    public Info() {
+    }
+
+    public Info(String userID, List<TickersItem> tickers) {
         this.userID = userID;
-    }
-
-    public String getUserID(){
-        return userID;
-    }
-
-    public void setTickers(List<TickersItem> tickers){
         this.tickers = tickers;
     }
 
-    public List<TickersItem> getTickers(){
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public String getUserID() {
+        return userID;
+    }
+
+    public void setTickers(List<TickersItem> tickers) {
+        this.tickers = tickers;
+    }
+
+    public List<TickersItem> getTickers() {
         return tickers;
     }
 }
